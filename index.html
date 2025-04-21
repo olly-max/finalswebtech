@@ -1,155 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molly G's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .project {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-  <header class="hero">
-    <img src="images/hombre.jpg" alt="home profile-photo" class="profile-photo">
-    <h1>Hi! Welcome to My World</h1>
-    <p>A brief introduction to who I am and what I do.</p>
-  </header>
-  <nav class="navigation">
-    <div class="menu-container">
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-circle">☰</label>
-      <div class="menu-options">
-        <a href="#resume" class="menu-item item1">Resume</a>
-        <a href="#projects" class="menu-item item3">Projects</a>
-        <a href="#about" class="menu-item item2">About Me</a>
-        <a href="#contact" class="menu-item item4">Contact Me</a>
-      </div>
-    </div>
-  </nav>
-  <main>
-    <section id="resume" class="resume">
-    <div id="resume-container" class="resume">
-      <h2 class="resume-title">
-        <p>R</p>
-        <p>E</p>
-        <p>S</p>
-        <p>U</p>
-        <p>M</p>
-        <p>E</p>
-      </h2>
-        <div class="resume-content">
-          <p><strong>Molly Oras</strong>, At Your Service!</p>
-          <p> "Tech-savvy, problem-solver, and eager to learn." I'm a second-year IT student who enjoys fixing tech issues and finding practical solutions. I focus on making systems work better and easier to use. I have experience in programming and troubleshooting, and I bring new ideas and creativity to every project I work on. I'm ready to help your team achieve great results with my skills and enthusiasm.</p>
-            <div class="resume-more">
-              <a href="resume.html">
-              <p>Browse My Career Journey ->>> </p>
-              </a>
-            </div>
-        </div>
-    </div>
-  </section>  
+    <h1>✨ Welcome to Molly G's Portfolio ✨</h1>
+    <h2>Aspiring Web Developer</h2>
+    <p>I'm passionate about coding, creativity, and bringing ideas to life on the web!</p>
+    <hr>
 
-  <section id="about" class="about">
-    <div class="about-box">
-        <h2 class="about-title">
-            <p>A</p>
-            <p>B</p>
-            <p>O</p>
-            <p>U</p>
-            <p>T</p>
-            <p> </p>
-            <p>M</p>
-            <p>E</p>
-        </h2>
-        
-        <div class="about-content">
-            I am the first daughter of Rodrigo Digman-Gadgad Oras and Odette Tibong Oras, born on the 13th day of February 2005. 
-            (*Cge bilangin niyo... Ilang taon na Ako?*)  
-            I have two siblings: My older brother Rod Andrey (22), and my younger sister,Ellain Ray (16).  
-            I live in the valley of La Trinidad, specifically in the Rose Capital of the Philippines, Barangay Bahong!
-            A girl with a soul tuned to music, a heart intertwined with nature, and a mind wired for creativity.  
-            Whether strumming melodies on my guitar or finding harmony in the rhythm of my own thoughts,  
-            I live through sounds and sensations that connect me to the world.
-        </p>
-
-        <h3>Hobbies & Passions</h3>
-        <ul class="hobbies-list">
-            <li>🎸 **Guitarist**—playing chords that echo emotions.</li>
-            <li>💻 **Coding for days**—even if the output is simple, the joy is in the process.</li>
-            <li>🎤 **Singing**—expressing emotions through melody.</li>
-            <li>🎶 **Vibing with music**—music is more than sound, it's a feeling.</li>
-            <li>🌿 **Nature lover**—finding peace in the wild beauty of life.</li>
+    <div class="project">
+        <h2><a href="../4.3 HTML Porfolio Project/public/movie-ranking.html">🎬 Movie Ranking Project</a></h2>
+        <h3>The Best Movies According to Me</h3>
+        <p>Here are my top three must-watch movies!</p>
+        <ul>
+            <li><strong>Spirited Away</strong> - A breathtaking anime with stunning visuals and an enchanting story.</li>
+            <li><strong>Ex Machina</strong> - A mind-blowing sci-fi thriller that questions AI and humanity.</li>
+            <li><strong>Drive</strong> - An artistic masterpiece with mesmerizing cinematography.</li>
         </ul>
-
-        <blockquote class="personal-quote">
-            "Even in big challenges, I have never touched a single stick of cigarettes—strength is found within, not in smoke."
-        </blockquote>
     </div>
-</section>
 
-  
-
-<section id="projects" class="projects">
-  <h2>Projects</h2>
-  <p>Showcase of my work and activities.</p>
-  <div class="projects-container">
-    <a href="projects3/4.3 HTML Porfolio Project (2)">
-    <div class="project">Project 1</div>
-    </a>
-    <div class="project">Project 2</div>
-    <div class="project">Project 3</div>
-  </div>
-</section>
-
-
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>  
-            Personal Gmail Account: 
-            <a href="mailto:yozuvaw@gmail.com" aria-label="Send email to yozuvaw at gmail">yozuvaw@gmail.com</a>
-        </p>
+    <div class="project">
+        <h2><a href="../4.3 HTML Porfolio Project/public/birthday-invite.html">🎉 Birthday Invite Project</a></h2>
+        <h3>🎂 It's My 20th Birthday! 🎂</h3>
+        <p>Come and celebrate with me! Let’s make it a day to remember. 🥳</p>
+        <img src="../4.3 HTML Porfolio Project/assets/images/birthday-invite.png" alt="Birthday Cake" width="300">
+        <h4>What to bring:</h4>
+        <ul>
+            <li>🎈 Balloons (I absolutely love them!)</li>
+            <li>🎁 Gifts (Nothing fancy, just your presence counts!)</li>
+            <li>🍽️ An appetite (There's going to be SO much food!)</li>
+            <li>🛍️ A zip bag (Because who doesn’t love taking home leftovers?)</li>
+        </ul>
     </div>
-  </div>
-</div>
 
-<!-- Social Media Section -->
-<div class="contact-border social-media">
-  <h3>Social Media</h3>
-  <div class="contact-row">
-      <div class="contact-item">
-          <a href="https://www.facebook.com/molly.grail.oras/" target="_blank" rel="noopener noreferrer">
-              <div class="profile-icon">
-                  <img src="images/contact_infos/fb_icon.jpg" alt="Facebook Profile">
-              </div>
-          </a>
-          <p>Facebook Account: <a href="https://www.facebook.com/molly.grail.oras/" target="_blank" rel="noopener noreferrer">facebook.com/molly.grail.oras</a></p>
-      </div>
-      <div class="contact-item">
-          <a href="http://t.me/mollyGray_20" target="_blank" rel="noopener noreferrer">
-              <div class="profile-icon">
-                  <img src="images/contact_infos/telelet.png" alt="Twitter Profile">
-              </div>
-          </a>
-          <p>Telegram Account: <a href="http://t.me/mollyGray_20" target="_blank" rel="noopener noreferrer">telegram.com/grayMols_20</a></p>
-      </div>
-      <div class="contact-item">
-          <a href="https://www.tiktok.com/@molly_x_rawr_1.3" target="_blank" rel="noopener noreferrer">
-              <div class="profile-icon">
-                  <img src="images/contact_infos/tiktok2ening.jpg" alt="TikTok Profile">
-              </div>
-          </a>
-          <p>TikTok Account: <a href="https://www.tiktok.com/@molly_x_rawr_1.3" target="_blank" rel="noopener noreferrer">@molly_x_rawr_1.3</a></p>
-      </div>
-  </div>
-</div>
-  
-    
-    
-  </main>
-  <footer>
-    <p>MOLLY GRAIL TIBONG ORAS</p>
-    <p>© 2025 All rights reserved.</p>
-  </footer>
+    <h4>
+        <a href="./public/about.html">📜 About Me</a> |
+        <a href="./public/contact.html">📩 Contact Me</a>
+    </h4>
 </body>
 </html>
