@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      color: #2e2e2e;
+      background: linear-gradient(120deg, #e2dac9, #f0cfcf, #cdd9e4);
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgba(107, 146, 194, 0.95);
+      color: #ffffff;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .navbar a:hover {
+      background-color: #e06c6c;
+    }
+
+    /* Divider */
+    .section-divider {
+      border-top: 6px dotted #e06c6c;
+      margin: 40px auto;
+      width: 85%;
+      border-radius: 50%;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(45deg, #6a4023, #e06c6c, #6b92c2);
+      color: #ffffff;
+      text-align: center;
+      padding: 30px;
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 85%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Profile Photo */
+    .profile-photo {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 5px solid #e06c6c;
+      margin: 15px auto;
+      display: block;
+      box-shadow: 10px 8px 20px rgba(107, 146, 194, 0.5);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .profile-photo:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 22px rgba(107, 146, 194, 0.6);
+    }
+
+    /* Resume Section */
+    .resume {
+      margin: 30px auto;
+      max-width: 80%;
+      padding: 20px 30px;
+      background: #faf3e8;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .resume h2 {
+      color: #6a4023;
+      border-bottom: 2px solid #e06c6c;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    .resume-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .resume-list li {
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background: #f7e6e6;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .resume-list li:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+    .resume-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .resume-item img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out;
+    }
+    .resume-item img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(45deg, #6a4023, #e06c6c, #6b92c2);
+      color: #ffffff;
+      font-size: 0.9rem;
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 90%;
+      box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.4);
+    }
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .resume {
+        max-width: 95%;
+      }
+    
+      .resume-item img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    @media (max-width: 768px) {
+      .profile-photo {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+        float: right;
+      }
+      .hero p{
+        float: left;
+        width: 80%;
+    }
+      .resume-item img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Work Experience</a>
+    <a href="#skills">Skills</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Resume</h1>
+    <img src="images/resume.ows.jpg" alt="Your Profile Picture" class="profile-photo">
+    <h2>Molly Grail Tibong Oras</h2>
+    <p>Professional background, education, and skills.</p>
+  </header>
+
+  <div class="section-divider"></div>
+
+  <main>
+    <section id="education" class="resume">
+      <h2>Education</h2>
+      <ul class="resume-list">
+        <li class="resume-item">
+          <img src="images/resume_images/KCP.jpg" alt="Kings' College Logo">
+          <div>
+            <strong>Bachelor of Science in Information Technology</strong>
+            Kings' College of the Philippines (KCP): 2023-Present
+          </div>
+        </li>
+        <li class="resume-item">
+          <img src="images/resume_images/TSHI.png" alt="Tublay SHS Logo">
+          <div>
+            <strong>Senior High School Graduate - HUMSS Strand</strong>
+            Tublay School of Home Industries: 2023
+          </div>
+        </li>
+        <li class="resume-item">
+          <img src="images/resume_images/TSHI.png" alt="Tublay JHS Logo">
+          <div>
+            <strong>Junior High School Completer - Food Trades</strong>
+            Tublay School of Home Industries: 2020
+          </div>
+        </li>
+        <li class="resume-item">
+          <img src="images/resume_images/BES.jpg" alt="Bahong Elementary Logo">
+          <div>
+            <strong>Elementary School Graduate</strong>
+            Bahong Elementary School: 2017
+          </div>
+        </li>
+      </ul>
+    </section>
+    <div class="section-divider"></div>
+
+    <section id="experience" class="resume">
+      <h2>Work Experience</h2>
+      <ul class="resume-list">
+        <li class="resume-item">
+          <img src="images/resume_images/CAPITOL.jpg" alt="Benguet Provincial Capitol Logo">
+          <div>
+            <strong>Office Assistant Intern</strong>
+            Benguet Provincial Capitol (March 2023)<br>
+            - Organized and maintained inventory records.<br>
+            - Utilized software for data entry and inventory management.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <div class="section-divider"></div>
+  
+
+    <section id="skills" class="resume">
+      <h2>Skills</h2>
+      <ul class="resume-list">
+        <li class="resume-item">
+          <img src="images/resume_images/html-css.webp" alt="HTML Icon">
+          <div>HTML, CSS</div>
+        </li>
+        <li class="resume-item">
+          <img src="images/resume_images/resp.webdes.png" alt="Design Icon">
+          <div>Responsive Web Design</div>
+        </li>
+        <li class="resume-item">
+          <img src="images/resume_images/probsolved.webp" alt="Problem-Solving Icon">
+          <div>Problem-Solving & Collaboration</div>
+        </li>
+        <li class="resume-item">
+          <img src="images/resume_images/effectivcom.jpg" alt="Communication Icon">
+          <div>Effective Communication</div>
+        </li>
+        <li class="resume-item">
+          <img src="images/resume_images/multi.webp" alt="Multitasking Icon">
+          <div>Multitasking Under Pressure</div>
+        </li>
+        <li class="resume-item">
+          <img src="images/resume_images/organized.webp" alt="Organization Icon">
+          <div>Organization and Attention to Detail</div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Molly Grail Oras - All rights reserved.</p>
+    <p><a href="index.html">Back to Index</a></p>
+  </footer>
+</body>
+</html>
+
